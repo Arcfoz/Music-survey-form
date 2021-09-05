@@ -1,2 +1,2 @@
 # Music-survey-form
-Build a survey form, from freecodecamp.org responsive web design projects
+Build a very simple survey form, from freecodecamp.org responsive web design projects
