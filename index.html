@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Music survey form</title>
+    <link rel="icon" href="https://img.icons8.com/ios-glyphs/30/00FFBF/audio-wave-2.png" type="image" sizes="16x16">
+</head>
+<body>
+    <h1 id="title">Music survey form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">
+            Name :
+            <input type="text" id="name" placeholder="Enter your name" class="form-input" required>
+        </label>
+
+        <label for="email" id="email-label">
+            Email :
+            <input type="email" id="email" class="form-input" placeholder="Enter yout email" required>
+        </label>
+        
+        <label for="number" id="number-label">
+            Age :
+            <input type="number" id="number" class="form-input required" placeholder="How old are you?" min="10" max="99">
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+            Gender :
+            <select id="dropdown" required>
+                <option disabled selected value>Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+        </label>
+
+        <label for="choise">
+            How often do you listen to music?<br>
+            <label class="radio">
+                <input type="radio" class="radio-input" name="choise" value="everday" checked/>Everyday
+            </label>
+            <label class="radio">
+                <input type="radio" class="radio-input" name="choise" value="1-2-a-week"/>Once or twice a week
+            </label>
+            <label class="radio">
+                <input type="radio" class="radio-input" name="choise" value="3-4-times-a-week"/>3 or 4 times a week
+            </label>
+            <label class="radio">
+                <input type="radio" class="radio-input" name="choise" value="Never"/>Never
+            </label>
+        </label>
+
+        <label for="choise">
+            What would you like to see improved?<br>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox-input" value="Electronic-music" />Electronic music
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox-input" value="Hip-hop-music" />Hip hop music
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox-input" value="Jazz" />Jazz
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox-input" value="Rock-music" />Rock music
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox-input" value="Soul-music-and-R&B" />Soul music and R&B
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox-input" value="Pop-music" />Pop music
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox-input" value="Others" />Others
+            </label>
+        </label>
+
+        <label for="comment">
+            Any comments or suggestions?
+            <textarea name="comment" placeholder="Enter your comment here ..." class="textarea-input"></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+        
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
